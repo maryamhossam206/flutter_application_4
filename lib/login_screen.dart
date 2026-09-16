@@ -176,9 +176,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           ElevatedButton(
                             onPressed: () {
                               if (_formKey.currentState!.validate()) {
-                                ScaffoldMessenger.of(context).showSnackBar(
-                                  const SnackBar(content: Text('Login successful!')),
-                                );
+                                context.go('/products');
                               }
                             },
                             style: ElevatedButton.styleFrom(
